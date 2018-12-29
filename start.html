@@ -1,0 +1,105 @@
+<!--<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width,initial-scale:1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+</head>
+<body bgcolor ="red">
+</body>
+</html-->
+<html>
+<head>
+	<title>Google</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width,initial-scale:1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <style>
+  
+  	.circle:hover
+  	{
+    transition:1s;
+    transform: rotate(180 deg);
+  	}
+  	.head
+  	{
+  		font-size: 50px;
+  		font-weight: bold;
+  		font-family: "montesarat";
+  		text-align: center;
+  		color: teal;
+  		margin-top: 20px;
+  	}
+  	
+  	
+  	</style>
+  
+</head>
+<body>
+	 
+	<div class="container">
+		<div class="head">LET'S PLAYYYYYYYYY!</div>
+		<hr>
+		<!--<ul style="list-style-type:none">-->
+		<Button type="submit" id="start" onclick="start">START</Button>
+			
+			<table class="cirlce" style="margin-left:300px;margin-top:150px;" id="table" >
+				<thead></thead>
+					<tbody>
+						<tr>
+							<td><img src="images/stones.png" style="height:150px;width:150px;" class="responsive-img" id="stone" onclick="choosePic1()"></td>
+			<td rowspan="2"><img src="images/paper.jpg" style="height:300px;width:150px;" class="responsive-img" id="paper" onclick="choosePic2()"></td>
+		    </tr>
+		   <tr>
+		    <td><img src="images/scissors.jpg" style="height:150px;width:200;" class="responsive-img" id="scissors" onclick="choosePic3s()"></td>
+		</tr>
+		</tbody>
+	</table>
+
+		</div>
+		<script > 
+		function start()
+		</script>
+		<script>
+		{
+
+	var x1=document.getElementById("stone").innerHTML
+    var myPix1 = new Array("images/paper.jpg","images/scissors.jpg");
+
+function choosePic1() {
+     var randomNum = Math.floor(Math.random() * myPix1.length);
+     document.getElementById("stone").src = myPix1[randomNum];
+ }
+}</script>
+
+<script>
+		{
+
+	var x2=document.getElementById("paper").innerHTML
+    var myPix2 = new Array("images/stones.png","images/scissors.jpg");
+
+function choosePic2() {
+     var randomNum = Math.floor(Math.random() * myPix2.length);
+     document.getElementById("paper").src = myPix2[randomNum];
+ }
+}</script>
+<script>
+		{
+
+	var x3=document.getElementById("scissors").innerHTML
+    var myPix3 = new Array("images/paper.jpg","images/stones.png");
+
+function choosePic3() {
+     var randomNum = Math.floor(Math.random() * myPix3.length);
+     document.getElementById("scissors").src = myPix3[randomNum];
+ }
+}</script>
+
+	</body>
+	</html>
